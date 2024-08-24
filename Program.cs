@@ -37,12 +37,30 @@ using System.Globalization;
 // int numero = 123456;
 // Console.WriteLine(numero.ToString("##-##-##"));
 
-DateTime data = DateTime.Now;
-//Console.WriteLine(data);
+// DateTime data = DateTime.Now;
+// //Console.WriteLine(data);
 
-Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
-Console.WriteLine(data.ToShortDateString());
-Console.WriteLine(data.ToShortTimeString());
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+// Console.WriteLine(data.ToShortDateString());
+// Console.WriteLine(data.ToShortTimeString());
 
-DateTime data2 = DateTime.Parse("07/05/1998 15:00");
-Console.WriteLine(data2);
+// DateTime data2 = DateTime.Parse("07/05/1998 15:00");
+// Console.WriteLine(data2);
+
+
+// try {
+//     string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+//     foreach (string linha in linhas)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// } catch (Exception ex)
+// {
+//     Console.WriteLine("Erro ao ler arquivo: " + ex.Message);
+// } finally
+// {
+//     Console.WriteLine("Fim do programa");
+// }
+
+new ExemploExcecao().Metodo1();
