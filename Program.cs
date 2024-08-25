@@ -63,4 +63,58 @@ using System.Globalization;
 //     Console.WriteLine("Fim do programa");
 // }
 
-new ExemploExcecao().Metodo1();
+//new ExemploExcecao().Metodo1();
+
+
+// Queue<int> fila = new Queue<int>();
+
+// fila.Enqueue(10);
+// fila.Enqueue(29);
+// fila.Enqueue(49);
+// fila.Enqueue(37);
+
+// foreach (int Item in fila) {
+//     Console.WriteLine(Item);
+// }
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+// fila.Enqueue(254);
+
+// foreach (int Item in fila) {
+//     Console.WriteLine(Item);
+// }
+
+
+// Stack<string> bagunça = new Stack<string>();
+
+// bagunça.Push("cuecas");
+// bagunça.Push("bermudas");
+// bagunça.Push("meias");
+// bagunça.Push("camisas");
+
+// foreach (string roupa in bagunça) {
+//     Console.WriteLine(roupa);
+// }
+// Console.WriteLine($"dobrando as {bagunça.Pop()}");
+
+// foreach (string roupa in bagunça) {
+//     Console.WriteLine(roupa);
+// } 
+
+Dictionary<string, string> nomes = new Dictionary<string, string>();
+
+nomes.Add("LC", "Lucas Camilo");
+nomes.Add("AF", "Andressa Fernandes");
+nomes.Add("RV", "Renata Vasconcelos");
+
+foreach(var nome in nomes) {
+    Console.WriteLine($"Abreviação {nome.Key} é {nome.Value}");
+}
+
+Console.WriteLine("-------------------------");
+
+nomes.Remove("AF");
+nomes["RV"] = "Renata Vaz";
+
+foreach(var nome in nomes) {
+    Console.WriteLine($"Abreviação {nome.Key} é {nome.Value}");
+}
