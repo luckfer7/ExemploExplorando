@@ -14,6 +14,12 @@ namespace ExemploExplorando.Models
             Sobrenome = sobrenome;
         }
 
+        public void Deconstruct(out string nome, out string sobrenome)
+        {
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
+
         public Pessoa()
         {
             

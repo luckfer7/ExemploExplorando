@@ -100,21 +100,68 @@ using System.Globalization;
 //     Console.WriteLine(roupa);
 // } 
 
-Dictionary<string, string> nomes = new Dictionary<string, string>();
+// Dictionary<string, string> nomes = new Dictionary<string, string>();
 
-nomes.Add("LC", "Lucas Camilo");
-nomes.Add("AF", "Andressa Fernandes");
-nomes.Add("RV", "Renata Vasconcelos");
+// nomes.Add("LC", "Lucas Camilo");
+// nomes.Add("AF", "Andressa Fernandes");
+// nomes.Add("RV", "Renata Vasconcelos");
 
-foreach(var nome in nomes) {
-    Console.WriteLine($"Abreviação {nome.Key} é {nome.Value}");
-}
+// foreach(var nome in nomes) {
+//     Console.WriteLine($"Abreviação {nome.Key} é {nome.Value}");
+// }
 
-Console.WriteLine("-------------------------");
+// Console.WriteLine("-------------------------");
 
-nomes.Remove("AF");
-nomes["RV"] = "Renata Vaz";
+// nomes.Remove("AF");
+// nomes["RV"] = "Renata Vaz";
 
-foreach(var nome in nomes) {
-    Console.WriteLine($"Abreviação {nome.Key} é {nome.Value}");
-}
+// foreach(var nome in nomes) {
+//     Console.WriteLine($"Abreviação {nome.Key} é {nome.Value}");
+// }
+
+//TUPLAS
+
+//primeira maneira
+// (int, string, string) tupla = (1, "Lucas", "Camilo");
+// Console.WriteLine($"id:{tupla.Item1}");
+// Console.WriteLine($"Nome:{tupla.Item2}");
+// Console.WriteLine($"Sobrenome:{tupla.Item3}");
+
+// //segunda maneira
+// ValueTuple<int, string, string> tuplaDois = (1, "Lucas", "Camilo");
+// Console.WriteLine(tuplaDois);
+
+// //terceira maneira
+// var tuplaTres = Tuple.Create (1, "Lucas", "Camilo");
+// Console.WriteLine(tuplaTres);
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// var (sucesso, linhasDoArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+// if (sucesso) {
+//     //Console.WriteLine("Quantidade de linhas do arquivo:" + QuantidadeDeLinhasDoArquivo);
+//     foreach(string linha in linhasDoArquivo) {
+//         Console.WriteLine(linha);
+//     }
+// } 
+// else {
+//     Console.WriteLine("Não foi possível ler o arquivo");
+// }
+
+//DESCONSTRUTOR
+
+// Pessoa p1 = new Pessoa("Lucas", "Camilo");
+// (string nome, string sobrenome) = p1;
+
+// Console.WriteLine($"{nome} {sobrenome}");
+
+
+//TERNARIO
+
+int numero = 71;
+bool ehPar = false;
+
+ehPar = numero % 2 == 0;
+Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "ímpar"));
